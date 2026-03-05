@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Personal Information:</legend>
+            <label for="firstname">First name:</label><br>
+            <input type="text" id="firstname" name="firstname" value="John" readonly><br>
+            <label for="lastname">Last name:</label><br>
+            <input type="text" name="lastname" id="lastname" disabled><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" size="40" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" id="password" placeholder="Password" required><br><br>
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" id="male" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" name="gender" id="female" value="female" required>
+            <label for="female">Female</label><br><br>
+            <label>Hobbies:</label><br>
+            <input type="checkbox" name="gaming" id="gaming" value="Gaming" >
+            <label for="gaming">Gaming</label><br>
+            <input type="checkbox" name="football" id="football" value="Football">
+            <label for="football">Football</label><br>
+            <input type="checkbox" name="reading" id="reading" value="Reading">
+            <label for="reading">Reading</label><br><br>
+            <select name="pet" id="pet">
+                <option value="Dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="perrot">Parrot</option>
+            </select><br><br>
+            <textarea name="message" rows="10" cols="20" maxlength="30"></textarea><br><br>
+            <input type="submit" name="submit" id="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
