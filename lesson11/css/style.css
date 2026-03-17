@@ -1,0 +1,31 @@
+h3 {
+    /* color: yellow; */
+    /* color: rgb(76, 131, 143); */
+    /* color: #90FF00; */
+    color: rgba(255, 99, 71, 0.6);
+    /* width: 300px;
+    height: 300px; */
+    /* border: 15px solid green; */
+    background-color: black;
+    padding: 25px 50px 75px 100px;
+    margin: 100px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: green;
+}
+
+p {
+    /* margin-top: 100px;
+    margin-right: 100px;
+    margin-bottom: 150px;
+    margin-left: 80px; */
+    /* margin: 100px 100px 150px 80px; */
+    /* margin: 100px 75px 50px; */
+    /* margin: 100px 50px; */
+    margin: 100px;
+}
+body {
+    background: url("../images/galaxy.png") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
