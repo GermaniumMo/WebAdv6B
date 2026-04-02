@@ -1,0 +1,119 @@
+ul {
+    list-style-type: none;
+}
+
+ul .house::before {
+    background-image: url("../images/house-solid.png");
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    
+}
+ul .file::before {
+    background-image: url("../images/file-solid.png");
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    
+}
+ul .globe::before {
+    background-image: url("../images/globe-solid.png");
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    
+}
+ul .star::before {
+    background-image: url("../images/star-solid.png");
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    
+}
+
+ol {
+    /* list-style-type: lower-roman; */
+    background: #ffeeee;
+    padding: 15px;
+}
+
+ol li {
+    background: #ffe5e5;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+ul {
+    padding: 15px 25px;
+    font-size: 20px;
+    border: 2px solid grey;
+    border-left: 10px solid rgb(77, 77, 77);
+    background-color: lightblue;
+}
+
+ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid grey;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ff33cc;
+}
+tbody tr:nth-child(even){
+    background-color: #e495e4;
+}
+
+div {
+    overflow: scroll;
+    background-color: #d27979;
+    width: 200px;
+    height: 200px;
+}
+.table {
+    margin-top: 50px;
+    width: 500px;
+    background-color: transparent;
+}
+
+.table table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table table th, td {
+    text-align: left;
+    padding: 10px;
+}
+
+.table table tr:nth-child(even) {
+    background-color: #eae2e2;
+}
+
+.table table tr:nth-child(odd) {
+    background-color: transparent;
+}
+
+.table {
+    overflow-x: auto;
+    overflow-y:hidden;
+}
