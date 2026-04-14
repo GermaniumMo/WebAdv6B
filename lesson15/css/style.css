@@ -1,0 +1,53 @@
+div#static {
+    position: static;
+    border: 3px solid #00014e;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+}
+
+div#relative {
+    position: relative;
+    border: 3px solid #00014e;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    top: 20px;
+    left: 200px;
+}
+
+div#fixed {
+    position: fixed;
+    border: 3px solid #00014e;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    right: 200px;
+    top: 100px;
+}
+
+div#parent {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: 3px solid #00014e;
+    top: 100px;
+}
+
+div#absolute {
+    position: absolute;
+    background-color: #00014e;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    right: 80px;
+    color: white;
+}
+div#sticky {
+    position: sticky;
+    background-color: #00014e;
+    top: 0;
+    padding: 20px;
+    color: white;
+    margin-bottom: 30px;
+}

@@ -63,3 +63,15 @@ h1::before {
     content: url("../images/globe-solid.png");
 }
 
+h1::after {
+    content: url("../images/globe-solid.png");
+}
+
+h1::selection {
+    color: white;
+    background-color: #9ee5f0;
+
+}
+h1 {
+    opacity: 1;
+}
