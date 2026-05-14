@@ -3,53 +3,288 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>System Arch Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav-bar">
-            <div class="logo-container">
-                <img src="images/visily-container.png" alt="logo">
-                <h3>Germanium Morina</h3>
+    <div class="site-shell">
+        <header class="header" id="top">
+            <nav class="nav-bar" aria-label="Primary navigation">
+                <a class="logo-container" href="#top" aria-label="System Arch home">
+                    <img src="images/visily-container (1).png" alt="">
+                    <span>SYSTEM_ARCH</span>
+                </a>
+
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#about">./ABOUT</a></li>
+                        <li><a href="#projects">./PROJECTS</a></li>
+                        <li><a href="#process">./PROCESS</a></li>
+                        <li><a href="#contact">./CONTACT</a></li>
+                    </ul>
+                    <a class="nav-button" href="#contact">Resume.exe</a>
+                </div>
+            </nav>
+
+            <section class="hero container" aria-labelledby="hero-title">
+                <div class="description-section">
+                    <p class="status">Status: Active &amp; Available</p>
+                    <div class="position-title" id="hero-title">
+                        <h1>Architecting</h1>
+                        <h1 class="accent-word">Digital</h1>
+                        <h1>Systems.</h1>
+                    </div>
+                    <p class="hero-copy">Full-stack developer specializing in building high-performance scalable web applications with a focus on technical excellence and elegant code.</p>
+                    <div class="intro-contact">
+                        <a class="button primary" href="#contact">Start Project</a>
+                        <a class="button secondary" href="#projects">Github</a>
+                    </div>
+                </div>
+
+                <div class="image-section" aria-label="Developer portrait and quick stats">
+                    <img class="hero-portrait" src="images/visily-group-1.png" alt="Portrait of a smiling developer">
+                    <div class="metric-card experience-card">
+                        <strong>08+</strong>
+                        <span>YEARS EXPERIENCE</span>
+                    </div>
+                    <div class="metric-card projects-card">
+                        <strong>124</strong>
+                        <span>PROJECTS SHIPPED</span>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <section class="bio-section section-pad" id="about">
+                <div class="container split-layout">
+                    <div class="section-copy">
+                        <div class="section-kicker">
+                            <span></span>
+                            <p>01 // BACKGROUND</p>
+                        </div>
+                        <h2>System Bio</h2>
+                        <p class="bio-text">I am a passionate Software Architect with a deep-rooted interest in building systems that last. My journey began in the low-level world of C++ and evolved into crafting sophisticated React ecosystems.</p>
+                        <p class="bio-text">I believe that good software is not just about solving a problem, but doing so with a level of structural integrity that allows for effortless scaling and maintenance.</p>
+                    </div>
+
+                    <div class="skill-matrix" id="process" aria-label="Technical skill matrix">
+                        <article class="skill-card">
+                            <div class="skill-heading">
+                                <img src="images/visily-container.png" alt="">
+                                <h3>Frontend Stack</h3>
+                            </div>
+                            <div class="chip-row">
+                                <span>React</span>
+                                <span>TypeScript</span>
+                                <span>Next.js</span>
+                                <span>Tailwind</span>
+                                <span>GraphQL</span>
+                            </div>
+                        </article>
+
+                        <article class="skill-card">
+                            <div class="skill-heading">
+                                <img src="images/visily-container (2).png" alt="">
+                                <h3>Backend Stack</h3>
+                            </div>
+                            <div class="chip-row">
+                                <span>Node.js</span>
+                                <span>PostgreSQL</span>
+                                <span>Redis</span>
+                                <span>Docker</span>
+                                <span>Python</span>
+                            </div>
+                        </article>
+
+                        <article class="skill-card wide">
+                            <div class="skill-heading">
+                                <img src="images/visily-container (3).png" alt="">
+                                <h3>Design Systems</h3>
+                            </div>
+                            <div class="chip-row">
+                                <span>Figma</span>
+                                <span>Atomic Design</span>
+                                <span>Accessibility</span>
+                                <span>Component Architecture</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects-section section-pad" id="projects">
+                <div class="container">
+                    <div class="section-copy compact">
+                        <div class="section-kicker">
+                            <span></span>
+                            <p>02 // PROJECTS</p>
+                        </div>
+                        <h2>Work Output</h2>
+                    </div>
+
+                    <div class="project-grid">
+                        <article class="project-card">
+                            <img src="images/visily-image.png" alt="Analytics dashboard displayed on a laptop">
+                            <div class="project-body">
+                                <h3>Quantum CRM</h3>
+                                <p>An AI-powered customer relationship platform with predictive analytics and automated lead scoring.</p>
+                                <div class="chip-row">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>AI</span>
+                                </div>
+                            </div>
+                            <a class="case-link" href="#contact">
+                                <span>Case Study</span>
+                                <img src="images/visily-external-link.png" alt="">
+                            </a>
+                        </article>
+
+                        <article class="project-card">
+                            <img src="images/visily-image (1).png" alt="Server racks with glowing network cables">
+                            <div class="project-body">
+                                <h3>Nexus Protocol</h3>
+                                <p>Decentralized infrastructure for low-latency peer-to-peer communication using WebRTC.</p>
+                                <div class="chip-row">
+                                    <span>WebRTC</span>
+                                    <span>Rust</span>
+                                    <span>P2P</span>
+                                </div>
+                            </div>
+                            <a class="case-link" href="#contact">
+                                <span>Case Study</span>
+                                <img src="images/visily-external-link.png" alt="">
+                            </a>
+                        </article>
+
+                        <article class="project-card">
+                            <img src="images/visily-image (2).png" alt="Minimal placeholder mountain graphic">
+                            <div class="project-body">
+                                <h3>Lumina Studio</h3>
+                                <p>A high-performance 3D rendering engine built specifically for architectural visualization.</p>
+                                <div class="chip-row">
+                                    <span>Three</span>
+                                    <span>WebGL</span>
+                                    <span>UX</span>
+                                </div>
+                            </div>
+                            <a class="case-link" href="#contact">
+                                <span>Case Study</span>
+                                <img src="images/visily-external-link.png" alt="">
+                            </a>
+                        </article>
+
+                        <article class="project-card">
+                            <img src="images/visily-image (2).png" alt="Minimal placeholder mountain graphic">
+                            <div class="project-body">
+                                <h3>Vortex Analytics</h3>
+                                <p>Real-time financial market tracking with sub-millisecond data updates and custom alerting.</p>
+                                <div class="chip-row">
+                                    <span>FinTech</span>
+                                    <span>Kafka</span>
+                                    <span>Charts</span>
+                                </div>
+                            </div>
+                            <a class="case-link" href="#contact">
+                                <span>Case Study</span>
+                                <img src="images/visily-external-link.png" alt="">
+                            </a>
+                        </article>
+
+                        <article class="project-card">
+                            <img src="images/visily-image (3).png" alt="Glowing circuit board schematic">
+                            <div class="project-body">
+                                <h3>Titan OS</h3>
+                                <p>A browser-based operating system shell designed for ultra-minimalist developer productivity.</p>
+                                <div class="chip-row">
+                                    <span>Shell</span>
+                                    <span>WASM</span>
+                                    <span>DX</span>
+                                </div>
+                            </div>
+                            <a class="case-link" href="#contact">
+                                <span>Case Study</span>
+                                <img src="images/visily-external-link.png" alt="">
+                            </a>
+                        </article>
+
+                        <article class="project-card">
+                            <img src="images/visily-image (4).png" alt="Close-up of computer hardware circuitry">
+                            <div class="project-body">
+                                <h3>Echo Mesh</h3>
+                                <p>Scalable IoT device management platform for smart city infrastructure monitoring.</p>
+                                <div class="chip-row">
+                                    <span>IoT</span>
+                                    <span>Edge</span>
+                                    <span>Cloud</span>
+                                </div>
+                            </div>
+                            <a class="case-link" href="#contact">
+                                <span>Case Study</span>
+                                <img src="images/visily-external-link.png" alt="">
+                            </a>
+                        </article>
+                    </div>
+
+                    <a href="#contact" class="archive-button">Access Archive [v2.4]</a>
+                </div>
+            </section>
+
+            <section class="contact-section section-pad" id="contact">
+                <div class="container contact-container">
+                    <div class="section-copy centered">
+                        <div class="section-kicker">
+                            <span></span>
+                            <p>03 // CONTACT</p>
+                        </div>
+                        <h2>Initialize Connection</h2>
+                    </div>
+
+                    <form class="contact-form" action="#" method="post">
+                        <div class="form-grid">
+                            <label>
+                                <span>IDENTITY_NAME</span>
+                                <input type="text" name="name" placeholder="John Doe">
+                            </label>
+                            <label>
+                                <span>COMM_CHANNEL</span>
+                                <input type="email" name="email" placeholder="john@protocol.io">
+                            </label>
+                        </div>
+
+                        <label>
+                            <span>TRANSMISSION_BODY</span>
+                            <textarea name="message" placeholder="Describe your project architecture or mission parameters..."></textarea>
+                        </label>
+
+                        <button type="submit">Execute Send_Protocol</button>
+
+                        <div class="form-footer">
+                            <div class="social-links" aria-label="Social links">
+                                <a href="#top" aria-label="Github"><img src="images/visily-github.png" alt=""></a>
+                                <a href="#top" aria-label="LinkedIn"><img src="images/visily-linkedin.png" alt=""></a>
+                                <a href="#top" aria-label="Twitter"><img src="images/visily-twitter.png" alt=""></a>
+                            </div>
+                            <p>P2P_ENCRYPTION: ENABLED // PORT: 443</p>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-inner">
+                <div class="footer-brand">
+                    <img src="images/visily-terminal.png" alt="">
+                    <span>&copy; 2024 SYSTEM_ARCH // ALL RIGHTS RESERVED</span>
+                </div>
+                <div class="footer-meta">
+                    <span>v3.0.1-stable</span>
+                    <span>Server: Online</span>
+                </div>
             </div>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="#">./ABOUT</a></li>
-                    <li><a href="#">./PROJECTS</a></li>
-                    <li><a href="#">./PROCESS</a></li>
-                    <li><a href="#">./CONTACT</a></li>
-                </ul>
-                <button>Resume.exe</button>
-            </div>
-        </nav>
-        <div class="intro-section">
-            <div class="description-section">
-                <div class="status">
-                    <span>Status: Active & Available</span>
-                </div>
-                <div class="position-title">
-                    <h1>SOFTWARE</h1>
-                    <h1>DEVELOPER</h1>
-                </div>
-                <p>Full-stack developer specializing in building high-performance scalable web applications with a focus on technical excellence and elegant code.</p>
-                <div class="intro-contact">
-                    <button>Start Project</button>
-                    <button>Github</button>
-                </div>
-            </div>
-            <div class="image-section">
-                <img src="images/visily-group-1.png" alt="image">
-                <div class="experince-card">
-                    <h2>08+</h2>
-                    <span>YEARS EXPERIENCE</span>
-                </div>
-                  <div class="projects-card">
-                    <h2>10</h2>
-                    <span>PROJECTS SHIPPED</span>
-                </div>
-            </div>
-        </div>
-    </header>
+        </footer>
+    </div>
 </body>
 </html>
