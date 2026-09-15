@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            padding: 6px 10px; font-size: 15px;
+        }
+        button {
+            padding: 6px 16px; font-size: 15px; margin-top: 10px;
+        }
+        #name_error {
+            visibility: hidden; color: red; margin-left: 8px;
+        }
+        .hint {
+            background: #f4f4f8; border-left: 4px solid #0f3460; padding: 10px 14px; max-width: 480px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text validation - only letters allowed</h1>
+    <p class="hint">Try: leave it empty, type <code>123</code>, type <code>drin1</code>,
+         then type just <code>drin</code>. Only the last one submits.</p>
+
+    <form onsubmit="return validation()">
+        <div class="name-container">
+            <label for="name" id="name_label">Name:</label>
+            <input type="text" name="name" id="name">
+            <span id="name_error">Please enter a valid name</span>
+        </div>
+        <br>
+        <button type="submit" name="submit">Send</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
