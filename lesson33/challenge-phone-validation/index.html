@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            padding: 6px 10px;
+            font-size: 15px;
+        }
+
+        button {
+            padding: 6px 16px;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        #name_error,
+        #age_error,
+        #city_error,
+        #phone_error {
+            visibility: hidden;
+            color: red;
+            margin-left: 8px;
+        }
+
+        .hint {
+            background: #f4f4f8;
+            border-left: 4px solid #0f3460;
+            padding: 10px 14px;
+            max-width: 480px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Full validation - name + age &amp; city</h1>
+    <p class="hint">The complete example from the lesson. Not every check needs a regex - <code>city</code> is just
+        checked for "not empty".</p>
+
+    <form onsubmit="return validation()">
+        <div class="name-container">
+            <label for="name" id="name_label">Name:</label>
+            <input type="text" name="name" id="name">
+            <span id="name_error">Please enter a valid name</span>
+        </div>
+        <br>
+        <div class="age-container">
+            <label for="age" id="age_label">Age:</label>
+            <input type="text" name="age" id="age">
+            <span id="age_error">Please enter a valid age</span>
+        </div>
+        <br>
+        <div class="city-container">
+            <label for="city" id="city_label">City:</label>
+            <input type="text" name="city" id="city">
+            <span id="city_error">Please enter your city</span>
+        </div>
+        <br>
+        <div class="phone-container">
+            <label for="phone" id="phone_label">Phone:</label>
+            <input type="text" name="phone" id="phone">
+            <span id="phone_error">Please enter a valid phone number</span>
+        </div>
+        <br>
+        <button type="submit" name="submit">Send</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>
