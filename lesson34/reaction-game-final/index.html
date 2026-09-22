@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: red;
+            display: none;
+            position: absolute;
+            top: 220px;
+            left: 60px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Reaction Game - final version</h2>
+    <p class="hint">Click the circle as fast as you can! It jumps to a random spot with a random color, and 
+        your reaction time is timed.
+    </p>
+    <p>Last reaction time: <span id="time">-</span></p>
+    <div class="circle" id="circle"></div>
+    <script src="main.js"></script>
+</body>
+</html>
